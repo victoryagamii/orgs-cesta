@@ -17,13 +17,15 @@ export default function App() {
   })
 
   if (!fontCarregada) {
-    return <AppLoading/>
+    return <AppLoading />
   }
 
   return (
-    <SafeAreaView style={{ backgroundColor: "black" }}>
-      <StatusBar />
-      <Cesta {...mock} />
+    <SafeAreaView style={{ flex: 1, backgroundColor: "black" }}>
+      <View style={{ backgroundColor: "white" }}>
+        <StatusBar />
+        <Cesta {...mock} />
+      </View>
     </SafeAreaView>
   );
 }
